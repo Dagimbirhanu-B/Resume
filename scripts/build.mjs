@@ -18,6 +18,9 @@ if (html.includes("__COMMIT__") || html.includes("__BUILT_AT__")) {
 
 await writeFile("dist/index.html", html);
 await copyFile("styles.css", "dist/styles.css");
+await copyFile("profile.jpg", "dist/profile.jpg").catch(() => {
+  throw new Error('profile.jpg not found. Add a photo named "profile.jpg" to the project root before building.');
+});
 await writeFile("dist/.nojekyll", "");
 
 console.log(`Built dist/ (commit ${commit}, ${builtAt})`);
