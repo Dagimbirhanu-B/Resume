@@ -21,6 +21,9 @@ await copyFile("styles.css", "dist/styles.css");
 await copyFile("profile.jpg", "dist/profile.jpg").catch(() => {
   throw new Error('profile.jpg not found. Add a photo named "profile.jpg" to the project root before building.');
 });
+await copyFile("hero-bg.png", "dist/hero-bg.png").catch(() => {
+  throw new Error('hero-bg.png not found. Add the header background image to the project root before building.');
+});
 await writeFile("dist/.nojekyll", "");
 
 console.log(`Built dist/ (commit ${commit}, ${builtAt})`);
