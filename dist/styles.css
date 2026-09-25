@@ -87,7 +87,8 @@ footer::before {
 }
 .masthead::before {
   background:
-    linear-gradient(rgba(6, 13, 18, 0.74), rgba(6, 13, 18, 0.84)),
+    
+    linear-gradient(rgba(6, 13, 18, 0.3), rgba(6, 13, 18, 0.5)),
     url("hero-bg.png") center/cover no-repeat;
 }
 
