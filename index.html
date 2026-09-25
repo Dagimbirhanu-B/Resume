@@ -28,7 +28,7 @@
     <section aria-labelledby="about">
       <h2 id="about">About</h2>
       <div class="body">
-        <p>I run and repair the servers, storage and virtualization layers other people's applications depend on. I'm moving from hands-on administration toward infrastructure architecture, with Terraform and CI/CD as the way I get there.</p>
+        <p>I keep a bank's infrastructure running and move it forward: hyperconverged clusters, database platforms and the monitoring that watches over both. Over three years at Siinqee Bank I've taken systems from design through racking to production, most recently leading the bank's shift to Nutanix HCI and standing up its critical service monitoring from nothing. I build the software side too, most often in Flask, when the tools I need don't already exist.</p>
       </div>
     </section>
 
@@ -36,8 +36,10 @@
       <h2 id="skills">Skills</h2>
       <div class="body">
         <dl class="skills">
-          <dt>Hyperconverged</dt><dd>Nutanix (AHV, Prism)</dd>
+          <dt>Hyperconverged</dt><dd>Nutanix (AHV, Prism), cluster design and deployment</dd>
           <dt>Virtualization</dt><dd>KVM, oVirt, VMware, Hyper-V, LDoms</dd>
+          <dt>Database platforms</dt><dd>Oracle Exadata, Oracle on Solaris, migration and tuning</dd>
+          <dt>Monitoring</dt><dd>Critical service monitoring, alert routing, Active Directory–scoped access</dd>
           <dt>Infrastructure as code</dt><dd>Terraform, Ansible</dd>
           <dt>Containers</dt><dd>Docker, Kubernetes</dd>
           <dt>Backend</dt><dd>Python, Flask, MySQL</dd>
@@ -53,9 +55,12 @@
           <h3>System Administrator</h3>
           <p class="meta">Siinqee Bank, Addis Ababa. 3 years</p>
           <ul>
-            <li>Diagnosed a disaster-recovery gap on Nutanix clusters and wrote the change request to fix replication between sites.</li>
+            <li>Led the bank's move to Nutanix HCI: a 9-host deployment across two clusters, 5 nodes on the primary site and 4 on DR, covering racking, AHV and Prism configuration, and network setup.</li>
+            <li>Set up Critical Service Monitoring (CSM) from scratch: alert routing to email and Microsoft Teams, threshold tuning per service, and Active Directory integration for scoped access; later expanded coverage to additional services.</li>
+            <li>Worked on the infrastructure setup and deployment of an Oracle Exadata cluster, including migrating production Oracle databases from Solaris and supporting the DBA team through tuning and rollout.</li>
+            <li>Built and maintain ResMon, an internal Flask and MySQL tool for server resource monitoring; migrated its alerting from Telegram to Microsoft Teams webhooks, scoped credential access by department, and added soft-delete recovery for servers.</li>
+            <li>Diagnosed a disaster-recovery gap on Nutanix clusters and wrote the change request that fixed replication between sites.</li>
             <li>Recovered an oVirt hosted engine that would not start because of unreachable NFS storage.</li>
-            <li>Tested Terraform read-only against Nutanix and oVirt before using it on real environments.</li>
           </ul>
         </article>
       </div>
@@ -65,8 +70,12 @@
       <h2 id="projects">Projects</h2>
       <div class="body">
         <article>
-          <h3>ResMon</h3>
-          <p>An internal server resource monitor built with Flask and MySQL. It collects CPU, memory and disk figures from hosts and shows them in one place.</p>
+          <h3>InfluenceET</h3>
+          <p>An influencer marketplace platform for the Ethiopian market, built with Flask, MySQL and Docker. Phase 1 covers social stats integration across YouTube, TikTok and Instagram, role-based dashboards, and admin workflows.</p>
+        </article>
+        <article>
+          <h3>Ofiif Injera</h3>
+          <p>A full-stack monorepo for a traditional Ethiopian injera business, built with Flask, React and React Native, alongside the business proposal. Worked through Linux deployment issues including port conflicts, Expo SDK versioning and network interface binding.</p>
         </article>
         <article>
           <h3>This website</h3>
