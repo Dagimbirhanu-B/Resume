@@ -1,92 +1,72 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dagi Bekele — System &amp; Cloud Infrastructure</title>
-  <meta name="description" content="Resume of Dagi Bekele, system and cloud infrastructure engineer based in Addis Ababa.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Description" content="Resume of Dagi Bekele, system and cloud infrastructure engineer based in Addis Ababa.">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    li.li6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {text-decoration: underline ; font-kerning: none}
+    span.s2 {font-kerning: none}
+    span.s3 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s4 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
+    span.s5 {-webkit-text-stroke: 0px #000000}
+    span.s6 {font: 13.0px Menlo; font-kerning: none}
+    ul.ul1 {list-style-type: disc}
+  </style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="masthead">
-    <h1>Dagi Bekele</h1>
-    <p class="role">System &amp; cloud infrastructure engineer</p>
-    <p class="contact">
-      Addis Ababa, Ethiopia<br>
-      <a href="mailto:you@example.com">you@example.com</a><br>
-      <a href="https://www.linkedin.com/in/your-handle">linkedin.com/in/your-handle</a><br>
-      <a href="https://github.com/your-username">github.com/your-username</a>
-    </p>
-  </header>
-
-  <main id="main">
-    <section aria-labelledby="about">
-      <h2 id="about">About</h2>
-      <div class="body">
-        <p>I keep a bank's infrastructure running and move it forward: hyperconverged clusters, database platforms and the monitoring that watches over both. Over three years at Siinqee Bank I've taken systems from design through racking to production, most recently leading the bank's shift to Nutanix HCI and standing up its critical service monitoring from nothing. I build the software side too, most often in Flask, when the tools I need don't already exist.</p>
-      </div>
-    </section>
-
-    <section aria-labelledby="skills">
-      <h2 id="skills">Skills</h2>
-      <div class="body">
-        <dl class="skills">
-          <dt>Hyperconverged</dt><dd>Nutanix (AHV, Prism), cluster design and deployment</dd>
-          <dt>Virtualization</dt><dd>KVM, oVirt, VMware, Hyper-V, LDoms</dd>
-          <dt>Database platforms</dt><dd>Oracle Exadata, Oracle on Solaris, migration and tuning</dd>
-          <dt>Monitoring</dt><dd>Critical service monitoring, alert routing, Active Directory–scoped access</dd>
-          <dt>Infrastructure as code</dt><dd>Terraform, Ansible</dd>
-          <dt>Containers</dt><dd>Docker, Kubernetes</dd>
-          <dt>Backend</dt><dd>Python, Flask, MySQL</dd>
-          <dt>Operating systems</dt><dd>Linux (RHEL family, SELinux), Windows Server</dd>
-        </dl>
-      </div>
-    </section>
-
-    <section aria-labelledby="experience">
-      <h2 id="experience">Experience</h2>
-      <div class="body">
-        <article>
-          <h3>System Administrator</h3>
-          <p class="meta">Siinqee Bank, Addis Ababa. 3 years</p>
-          <ul>
-            <li>Led the bank's move to Nutanix HCI: a 9-host deployment across two clusters, 5 nodes on the primary site and 4 on DR, covering racking, AHV and Prism configuration, and network setup.</li>
-            <li>Set up Critical Service Monitoring (CSM) from scratch: alert routing to email and Microsoft Teams, threshold tuning per service, and Active Directory integration for scoped access; later expanded coverage to additional services.</li>
-            <li>Worked on the infrastructure setup and deployment of an Oracle Exadata cluster, including migrating production Oracle databases from Solaris and supporting the DBA team through tuning and rollout.</li>
-            <li>Built and maintain ResMon, an internal Flask and MySQL tool for server resource monitoring; migrated its alerting from Telegram to Microsoft Teams webhooks, scoped credential access by department, and added soft-delete recovery for servers.</li>
-            <li>Diagnosed a disaster-recovery gap on Nutanix clusters and wrote the change request that fixed replication between sites.</li>
-            <li>Recovered an oVirt hosted engine that would not start because of unreachable NFS storage.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section aria-labelledby="projects">
-      <h2 id="projects">Projects</h2>
-      <div class="body">
-        <article>
-          <h3>InfluenceET</h3>
-          <p>An influencer marketplace platform for the Ethiopian market, built with Flask, MySQL and Docker. Phase 1 covers social stats integration across YouTube, TikTok and Instagram, role-based dashboards, and admin workflows.</p>
-        </article>
-        <article>
-          <h3>Ofiif Injera</h3>
-          <p>A full-stack monorepo for a traditional Ethiopian injera business, built with Flask, React and React Native, alongside the business proposal. Worked through Linux deployment issues including port conflicts, Expo SDK versioning and network interface binding.</p>
-        </article>
-        <article>
-          <h3>This website</h3>
-          <p>A static resume that is linted, tested, built and deployed by GitHub Actions on every push. The commit shown in the footer is the one that produced the page you are reading.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p class="build">Deployed from commit <code>__COMMIT__</code> on <time>__BUILT_AT__</time></p>
-  </footer>
+<p class="p1"><span class="s1">Skip to content</span></p>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Dagi Bekele</b></span></h1>
+<p class="p3"><span class="s2">System &amp; cloud infrastructure engineer</span></p>
+<p class="p4"><span class="s3">Addis Ababa, Ethiopia<br>
+</span><span class="s1">dagimbirhanubekele@gmail.com</span><span class="s3"><br>
+<a href="https://www.linkedin.com/in/your-handle"><span class="s4">linkedin.com/in/your-handle</span></a><br>
+<a href="https://github.com/your-username"><span class="s4">github.com/your-username</span></a></span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>About</b></span></h2>
+<p class="p3"><span class="s2">I keep a bank's infrastructure running and move it forward: hyperconverged clusters, database platforms and the monitoring that watches over both. Over three years at Siinqee Bank I've taken systems from design through racking to production, most recently leading the bank's shift to Nutanix HCI and standing up its critical service monitoring from nothing. I build the software side too, most often in Flask, when the tools I need don't already exist.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Skills</b></span></h2>
+<p class="p6"><span class="s2">Hyperconverged</span></p>
+<p class="p6"><span class="s2">Nutanix (AHV, Prism), cluster design and deployment</span></p>
+<p class="p6"><span class="s2">Virtualization</span></p>
+<p class="p6"><span class="s2">KVM, oVirt, VMware, Hyper-V, LDoms</span></p>
+<p class="p6"><span class="s2">Database platforms</span></p>
+<p class="p6"><span class="s2">Oracle Exadata, Oracle on Solaris, migration and tuning</span></p>
+<p class="p6"><span class="s2">Monitoring</span></p>
+<p class="p6"><span class="s2">Critical service monitoring, alert routing, Active Directory–scoped access</span></p>
+<p class="p6"><span class="s2">Infrastructure as code</span></p>
+<p class="p6"><span class="s2">Terraform, Ansible</span></p>
+<p class="p6"><span class="s2">Containers</span></p>
+<p class="p6"><span class="s2">Docker, Kubernetes</span></p>
+<p class="p6"><span class="s2">Backend</span></p>
+<p class="p6"><span class="s2">Python, Flask, MySQL</span></p>
+<p class="p6"><span class="s2">Operating systems</span></p>
+<p class="p6"><span class="s2">Linux (RHEL family, SELinux), Windows Server</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Experience</b></span></h2>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>System Administrator</b></span></h3>
+<p class="p3"><span class="s2">Siinqee Bank, Addis Ababa. 3 years</span></p>
+<ul class="ul1">
+  <li class="li6"><span class="s5"></span><span class="s2">Led the bank's move to Nutanix HCI: a 9-host deployment across two clusters, 5 nodes on the primary site and 4 on DR, covering racking, AHV and Prism configuration, and network setup.</span></li>
+  <li class="li6"><span class="s5"></span><span class="s2">Set up Critical Service Monitoring (CSM) from scratch: alert routing to email and Microsoft Teams, threshold tuning per service, and Active Directory integration for scoped access; later expanded coverage to additional services.</span></li>
+  <li class="li6"><span class="s5"></span><span class="s2">Worked on the infrastructure setup and deployment of an Oracle Exadata cluster, including migrating production Oracle databases from Solaris and supporting the DBA team through tuning and rollout.</span></li>
+  <li class="li6"><span class="s5"></span><span class="s2">Built and maintain ResMon, an internal Flask and MySQL tool for server resource monitoring; migrated its alerting from Telegram to Microsoft Teams webhooks, scoped credential access by department, and added soft-delete recovery for servers.</span></li>
+  <li class="li6"><span class="s5"></span><span class="s2">Diagnosed a disaster-recovery gap on Nutanix clusters and wrote the change request that fixed replication between sites.</span></li>
+  <li class="li6"><span class="s5"></span><span class="s2">Recovered an oVirt hosted engine that would not start because of unreachable NFS storage.</span></li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Projects</b></span></h2>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>InfluenceET</b></span></h3>
+<p class="p3"><span class="s2">An influencer marketplace platform for the Ethiopian market, built with Flask, MySQL and Docker. Phase 1 covers social stats integration across YouTube, TikTok and Instagram, role-based dashboards, and admin workflows.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Ofiif Injera</b></span></h3>
+<p class="p3"><span class="s2">A full-stack monorepo for a traditional Ethiopian injera business, built with Flask, React and React Native, alongside the business proposal. Worked through Linux deployment issues including port conflicts, Expo SDK versioning and network interface binding.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>This website</b></span></h3>
+<p class="p3"><span class="s2">A static resume that is linted, tested, built and deployed by GitHub Actions on every push. The commit shown in the footer is the one that produced the page you are reading.</span></p>
+<p class="p3"><span class="s2">Deployed from commit </span><span class="s6">__COMMIT__</span><span class="s2"> on __BUILT_AT__</span></p>
 </body>
 </html>
